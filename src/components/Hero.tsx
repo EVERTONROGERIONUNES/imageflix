@@ -17,17 +17,17 @@ const Hero = ({ title, score, image }: heroProps) => {
 
   return (
     <header className="relative box-border">
-      <img 
-      className='object-cover object-center h-auto w-full' 
-      src={image ? `${IMAGE_URL}/original/${image}`: placeholder} 
-      alt={title} 
-    />
+      <img
+        className='object-cover object-center h-auto w-full'
+        src={image ? `${IMAGE_URL}/original/${image}` : placeholder}
+        alt={title}
+      />
 
       <article className='absolute bottom-0 mb-64 px-8'>
         <p className='text-3xl'>Assista agora:</p>
         <h2 className='text-6xl font-bold'> {title} </h2>
 
-        <p className='text-base'>
+        <p className='text-base mt-5'>
           Nota{' '}
           <Score value={score} />
         </p>
